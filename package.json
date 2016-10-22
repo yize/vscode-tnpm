@@ -1,0 +1,116 @@
+{
+  "name": "vscode-tnpm",
+  "displayName": "tnpm",
+  "description": "tnpm commands for VSCode",
+  "version": "1.0.0",
+  "publisher": "yizeshc",
+  "icon": "tnpm_icon.png",
+  "engines": {
+    "vscode": "^0.10.7"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:tnpm-script.installSavedPackages",
+    "onCommand:tnpm-script.installPackage",
+    "onCommand:tnpm-script.installPackageDev",
+    "onCommand:tnpm-script.runScript",
+    "onCommand:tnpm-script.runScriptLatest",
+    "onCommand:tnpm-script.init",
+    "onCommand:tnpm-script.uninstallPackage",
+    "onCommand:tnpm-script.uninstallPackageDev",
+    "onCommand:tnpm-script.publish",
+    "onCommand:tnpm-script.deprecate",
+    "onCommand:tnpm-script.raw",
+    "onCommand:tnpm-script.terminate",
+    "onCommand:tnpm-script.start",
+    "onCommand:tnpm-script.test"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "tnpm-script.start",
+        "title": "tnpm start",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.test",
+        "title": "tnpm test",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.terminate",
+        "title": "Terminate running npm script",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.installSavedPackages",
+        "title": "Install saved packages",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.installPackage",
+        "title": "Install and save dependency",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.installPackageDev",
+        "title": "Install and save dev. dependency",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.runScript",
+        "title": "Run  npm script",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.runScriptLatest",
+        "title": "Run last npm script",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.init",
+        "title": "Initialize npm package",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.uninstallPackage",
+        "title": "Uninstall dependency",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.uninstallPackageDev",
+        "title": "Uninstall dev. dependency",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.publish",
+        "title": "Publish package",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.deprecate",
+        "title": "Deprecate package",
+        "category": "tnpm"
+      },
+      {
+        "command": "tnpm-script.raw",
+        "title": "Raw npm command",
+        "category": "tnpm"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^1.6.2",
+    "vscode": "^0.10.7"
+  },
+  "dependencies": {
+    "tree-kill": "^1.0.0"
+  }
+}

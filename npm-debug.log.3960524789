@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'show',
+1 verbose cli   'vsce',
+1 verbose cli   'version' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.7
+4 silly mapToRegistry name vsce
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'vsce',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'vsce',
+7 silly mapToRegistry   name: 'vsce',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/vsce
+9 verbose request uri https://registry.npmjs.org/vsce
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 5:25:35 PM
+12 verbose request id 572e938d54eaaba2
+13 verbose etag "CLHOOMGZXM0FYFPZ49R5PXCAA"
+14 http request GET https://registry.npmjs.org/vsce
+15 http 304 https://registry.npmjs.org/vsce
+16 verbose headers { date: 'Sat, 22 Oct 2016 09:25:43 GMT',
+16 verbose headers   via: '1.1 varnish',
+16 verbose headers   'cache-control': 'max-age=300',
+16 verbose headers   etag: '"CLHOOMGZXM0FYFPZ49R5PXCAA"',
+16 verbose headers   age: '0',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'x-served-by': 'cache-lcy1143-LCY',
+16 verbose headers   'x-cache': 'HIT',
+16 verbose headers   'x-cache-hits': '1',
+16 verbose headers   'x-timer': 'S1477128343.044271,VS0,VE697',
+16 verbose headers   vary: 'Accept-Encoding' }
+17 silly get cb [ 304,
+17 silly get   { date: 'Sat, 22 Oct 2016 09:25:43 GMT',
+17 silly get     via: '1.1 varnish',
+17 silly get     'cache-control': 'max-age=300',
+17 silly get     etag: '"CLHOOMGZXM0FYFPZ49R5PXCAA"',
+17 silly get     age: '0',
+17 silly get     connection: 'keep-alive',
+17 silly get     'x-served-by': 'cache-lcy1143-LCY',
+17 silly get     'x-cache': 'HIT',
+17 silly get     'x-cache-hits': '1',
+17 silly get     'x-timer': 'S1477128343.044271,VS0,VE697',
+17 silly get     vary: 'Accept-Encoding' } ]
+18 verbose etag https://registry.npmjs.org/vsce from cache
+19 verbose get saving vsce to /Users/yize/.npm/registry.npmjs.org/vsce/.cache.json
+20 verbose correctMkdir /Users/yize/.npm correctMkdir not in flight; initializing
+21 verbose exit [ 0, true ]
+22 verbose stack Error: write EPIPE
+22 verbose stack     at exports._errnoException (util.js:873:11)
+22 verbose stack     at WriteWrap.afterWrite (net.js:785:14)
+23 verbose cwd /Users/yize/github/vscode-npm
+24 error Darwin 16.0.0
+25 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "show" "vsce" "version"
+26 error node v4.4.7
+27 error npm  v3.10.5
+28 error code EPIPE
+29 error errno EPIPE
+30 error syscall write
+31 error write EPIPE
+32 error If you need help, you may report this error at:
+32 error     <https://github.com/npm/npm/issues>
+33 verbose exit [ 1, true ]
